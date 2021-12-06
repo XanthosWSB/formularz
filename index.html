@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <script type="text/javascript">
+            function wypisz()
+            {
+                var imie = document.getElementById("imie").value;
+                var nazwisko = document.getElementById("nazwisko").value;
+                var data_ur = document.getElementById("data_ur").value;
+                var adres1 = document.getElementById("adres1").value;
+                var adres2 = document.getElementById("adres2").value;
+                var miejscowosc = document.getElementById("miasto").value;
+                var preparat = document.getElementById("preparat").value;
+                alert(imie+" "+nazwisko+" "+data_ur+" "+adres1+" "+adres2+" "+miejscowosc+" "+preparat);
+            }
+        </script>
+   </head>
+
+   <body>
+       <div class="container mt-5">
+                <div class="card text-left">
+                        <div class="card-header border-right-0 border-left-0">Przykładowy formularz
+                        </div>
+                        <div class="card-body">
+                                <div class="row mb-2">
+                                    <div class="col-md-5">
+                                        <label for="imie">Imie</label>
+                                        <input type="text" class="form-control" id="imie" placeholder="Podaj imie">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="Nazwisko">Nazwisko</label>
+                                        <input type="text" class="form-control" id="nazwisko" placeholder="Podaj nazwisko">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="dataur">Data urodzenia</label>
+                                        <input type="date" class="form-control" id="data_ur">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-0">
+                                    <div class="form-group col-md-6">
+                                        <label for="adres">Adres</label>
+                                        <input type="name" class="form-control" id="adres1" placeholder="Pierwsza linijka adresu">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="adres">Adres 2</label>
+                                        <input type="name" class="form-control" id="adres2" placeholder="Adres cd.">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="miejscowosc">Miejscowosc</label>
+                                        <input type="text" class="form-control" id="miasto" placeholder="Miejscowosc">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="szczepienie">Zaszczepiony?</label>
+                                        <select class="form-control" id="preparat">
+                                            <option>Tak</option>
+                                            <option>Nie</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="card-footer text-right">
+                                        <button type="submit" .text-left class="btn btn-secondary">Anuluj</button>
+                                        <button type="submit" onclick="wypisz();" class="btn btn-primary">Wyslij</button>
+                        </div>
+                </div>
+       </div>
+   </body>
+
+
+
+
+</html>
